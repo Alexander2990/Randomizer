@@ -22,9 +22,11 @@ class MainViewController: UIViewController {
         getRandomNumberButton.layer.cornerRadius = 15
     }
 
-    @IBAction func getRundomNumberDidPressed() {
+    @IBAction func getRandomNumberDidPressed() {
+        let minimumNumber = Int(minimumValueLabel.text ?? "") ?? 0
+        let maximumNumber = Int(maximumValueLabel.text ?? "") ?? 100
         
-        
+        randomValueLabel.text = Int.random(in: minimumNumber...maximumNumber).formatted()
     }
     
 }

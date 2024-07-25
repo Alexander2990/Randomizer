@@ -62,6 +62,9 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Get Result"/>
+                                <connections>
+                                    <action selector="getRundomNumberDidPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="oWx-1V-Zzo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -76,6 +79,12 @@
                             <constraint firstItem="01K-7T-jgk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="sfd-Mv-ZOV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="getRandomNumberButton" destination="bMK-vd-oSV" id="qDA-xR-Oqy"/>
+                        <outlet property="maximumValueLabel" destination="yl1-1O-166" id="bML-j3-81z"/>
+                        <outlet property="minimumValueLabel" destination="yl1-1O-166" id="xJ2-sG-hAe"/>
+                        <outlet property="randomValueLabel" destination="z4T-h3-xS4" id="7EM-pd-j4c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

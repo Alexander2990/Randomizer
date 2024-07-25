@@ -89,7 +89,7 @@
                     <connections>
                         <outlet property="getRandomNumberButton" destination="bMK-vd-oSV" id="qDA-xR-Oqy"/>
                         <outlet property="maximumValueLabel" destination="yl1-1O-166" id="bML-j3-81z"/>
-                        <outlet property="minimumValueLabel" destination="yl1-1O-166" id="xJ2-sG-hAe"/>
+                        <outlet property="minimumValueLabel" destination="6Qe-Ws-E8W" id="HJs-T7-4Qg"/>
                         <outlet property="randomValueLabel" destination="z4T-h3-xS4" id="7EM-pd-j4c"/>
                     </connections>
                 </viewController>
@@ -129,6 +129,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Save">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="vf8-Gu-opd" kind="unwind" unwindAction="unwindToMain:" id="p2L-d8-iRs"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gS-TW-Lry">
                                         <rect key="frame" x="0.0" y="54.666666666666686" width="126" height="54.666666666666657"/>
@@ -160,6 +163,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Xp-QL-cCI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="vf8-Gu-opd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1798" y="4"/>
         </scene>

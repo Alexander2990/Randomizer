@@ -23,8 +23,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Educational project by Alexander Grigorenko" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwV-1D-MBR">
-                                <rect key="frame" x="16" y="503.66666666666674" width="398" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <rect key="frame" x="46" y="503.66666666666669" width="338.33333333333331" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -35,8 +35,6 @@
                             <constraint firstItem="hwV-1D-MBR" firstAttribute="top" secondItem="meZ-KQ-8nU" secondAttribute="bottom" constant="16" id="BGq-6e-aAY"/>
                             <constraint firstItem="meZ-KQ-8nU" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="F5b-PD-hgi"/>
                             <constraint firstItem="hwV-1D-MBR" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Hp7-Sj-AEE"/>
-                            <constraint firstItem="hwV-1D-MBR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Meg-nu-oV0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hwV-1D-MBR" secondAttribute="trailing" constant="16" id="dpS-Aq-Jhu"/>
                             <constraint firstItem="meZ-KQ-8nU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nRt-W2-Ngh"/>
                         </constraints>
                     </view>

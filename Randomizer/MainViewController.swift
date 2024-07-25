@@ -7,19 +7,25 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
 
-    @IBOutlet var minimumValueLabel: UILabel!
-    @IBOutlet var maximumValueLabel: UILabel!
+    @IBOutlet private var minimumValueLabel: UILabel!
+    @IBOutlet private var maximumValueLabel: UILabel!
     
-    @IBOutlet var randomValueLabel: UILabel!
+    @IBOutlet private var randomValueLabel: UILabel!
     
-    @IBOutlet var getRandomNumberButton: UIButton!
+    @IBOutlet private var getRandomNumberButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         getRandomNumberButton.layer.cornerRadius = 15
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let settingsVC = segue.destination as? SettingsViewController
+        settingsVC?.minimumValue = minimumValueLabel.text
+        settingsVC?.maximumValue = maximumValueLabel.text
     }
 
     @IBAction func getRandomNumberDidPressed() {
@@ -27,6 +33,13 @@ class MainViewController: UIViewController {
         let maximumNumber = Int(maximumValueLabel.text ?? "") ?? 100
         
         randomValueLabel.text = Int.random(in: minimumNumber...maximumNumber).formatted()
+    }
+    
+    @IBAction func unwindToMain(_ unwindSegue: UIStoryboardSegue) {
+        let settingsVC = unwindSegue.source as? SettingsViewController
+    
+        minimumValueLabel.text = settingsVC?.minimumValueTF.text
+        maximumValueLabel.text = settingsVC?.maximumValueTF.text
     }
     
 }

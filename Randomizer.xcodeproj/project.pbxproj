@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1107E57C2C5253CA00B4BAA0 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1107E57B2C5253C900B4BAA0 /* SettingsViewController.swift */; };
 		119F457D2C517EFE00D46B77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119F457C2C517EFE00D46B77 /* AppDelegate.swift */; };
 		119F457F2C517EFE00D46B77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119F457E2C517EFE00D46B77 /* SceneDelegate.swift */; };
 		119F45812C517EFE00D46B77 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119F45802C517EFE00D46B77 /* MainViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1107E57B2C5253C900B4BAA0 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		119F45792C517EFE00D46B77 /* Randomizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Randomizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		119F457C2C517EFE00D46B77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		119F457E2C517EFE00D46B77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				119F457C2C517EFE00D46B77 /* AppDelegate.swift */,
 				119F457E2C517EFE00D46B77 /* SceneDelegate.swift */,
 				119F45802C517EFE00D46B77 /* MainViewController.swift */,
+				1107E57B2C5253C900B4BAA0 /* SettingsViewController.swift */,
 				119F45822C517EFE00D46B77 /* Main.storyboard */,
 				119F45852C517F0100D46B77 /* Assets.xcassets */,
 				119F45872C517F0100D46B77 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				119F45812C517EFE00D46B77 /* MainViewController.swift in Sources */,
 				119F457D2C517EFE00D46B77 /* AppDelegate.swift in Sources */,
 				119F457F2C517EFE00D46B77 /* SceneDelegate.swift in Sources */,
+				1107E57C2C5253CA00B4BAA0 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
